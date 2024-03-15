@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.outer-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    background-color: black;
+    border-radius: 25px;
+    margin-left: 16px;
+}
+.inner-circle{
+    position: relative;
+    width: 330px;
+    height: 130px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    color: #393E46;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.hours {
+    font-size: 40px;
+}
+.minute {
+    font-size: 35px;
+}
+.sec {
+    font-size:  33px;
+}
+.msec {
+    font-size: 30px;
+}
+.buttons {
+    display: flex;
+    width: 330px;
+    margin-top: 35px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+}
+.btn {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    border: 4px solid #EEE;
+    background-color: black;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 4px solid black;
+}
+.btn1 {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: 4px solid #EEE;
+    background-color: black;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    /* margin-top: 10px; */
+    margin-left: 85px;
+    position: fixed;
+    bottom: 10px;
+
+}
+.btn1:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: 4px solid black;
+}
+
+.laps{
+    list-style: none;
+    color:black;
+    width: 330px;
+    height: 230px;
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+    margin: 15px 0 0 25px;
+    font-size: 20px;
+}
+.number {
+    color: white;
+    padding: 0 5px 0 0;
+    margin-right: 25px;
+}
+.timestamp {
+    display: inline-block;
+    margin-left: 10px;
+    color: #e0eded;
+}
+.lap-item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #393E46;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-bottom: 5px;
+}
+.laps::-webkit-scrollbar {
+    display: none;
+}
+.fa-solid{
+    padding: 0 0 0 25px;
+    color: black;
+    cursor: pointer;
+}
+.fa-solid:hover {
+    color: #EEE;
+}
+.dis {
+    visibility: hidden;
+}
