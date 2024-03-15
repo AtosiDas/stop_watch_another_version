@@ -97,6 +97,7 @@ const lap = () => {
     li.append(number, timeStamp);
     laps.append(li);
     clear.classList.remove("dis");
+    play();
     minCounter = 0;
     secCounter = 0;
     centiSecCounter = 0;
@@ -105,12 +106,14 @@ const lap = () => {
     clearInterval(min);
     clearInterval(sec);
     clearInterval(centiSec);
-    play();
+    // isPlay = true;
+
     playButton.innerHTML = "Play";
     hourButton.innerText = "00 : ";
     minButton.innerText = "00 :";
     secButton.innerHTML = "00 :";
     centiSecButton.innerHTML = "00";
+    lapButton.classList.add("dis");
 }
 
 const clearAll = () => {
